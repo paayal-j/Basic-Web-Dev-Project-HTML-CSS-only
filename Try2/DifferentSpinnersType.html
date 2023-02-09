@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spinner Types</title>
+    <!-- <link rel="stylesheet" href="styles.css">  -->
+    <style>
+      .spinner1 {
+        width: 50px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 8px solid;
+        border-color: rgb(17, 17, 17) rgba(241, 33, 33, 0);
+        animation: s1 1s infinite;
+      }
+      @keyframes s1 {
+        to {
+          transform: rotate(0.5turn);
+        }
+      }
+
+      .spinner2 {
+
+        width: 50px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 8px solid lightblue;
+        border-right-color:orange;
+        animation: s2 1s infinite linear;
+      }
+      @keyframes s2 {
+        to {
+          transform: rotate(1turn);
+        }
+      }
+
+      .spinner3 {
+
+        width: 50px;
+        padding: 8px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: #25b09b;
+        --_m:
+            conic-gradient(#0000 10%, #000),
+            linear-gradient(#000 0 0)content-box;
+            -webkit-mask:var(--_m);
+                mask: var(--_m);
+            -webkit-mask-composite: source-out;
+                mask-composite: subtract;
+        animation: s3 1s infinite linear;
+      }
+      @keyframes s3 {
+        to {
+          transform: rotate(1turn);
+        }
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="spinner1"></div>
+    <div class="spinner2"></div>
+    <div class="spinner3"></div>
+    <div class="spinner4"></div>
+    <div class="spinner5"></div>
+    <div class="spinner6"></div>
+    <div class="spinner7"></div>
+    <div class="spinner8"></div>
+    <div class="spinner9"></div>
+    <div class="spinner10"></div>
+  </body>
+</html>
